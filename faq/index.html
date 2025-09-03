@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs - Ecobazar | My New Hugo Site</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  
+  <header>
+    <div class="home-logo"><a href="/">Aakar Offset</a></div>
+    <div class="home-menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')"><div>☰</div></div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/Blog/">Blog</a>
+      <a href="/About/">About Us</a>
+      <a href="/Contact/">Contact Us</a>
+      <a href="/Faq/">Faqs</a>
+    </nav>
+  </header>
+
+  
+  <main>
+    
+
+
+  <div class="breadcrumb">
+  <a href="/">Home</a>
+  
+  
+  
+  
+    
+    &gt; <a href="/faq/">Faq</a>
+  
+</div>
+
+
+
+<section class="faq-section">
+  <div class="faq-left">
+    <h2>Welcome, Let’s Talk About Our Most Ask Questions</h2>
+
+    
+      <div class="accordion active">
+        <div class="accordion-header">What is the minimum order quantity?</div>
+        <div class="accordion-content">You can start from 40 pcs up to 2000 pcs, depending on size.</div>
+      </div>
+    
+      <div class="accordion ">
+        <div class="accordion-header">Do you provide design services?</div>
+        <div class="accordion-content">Yes, we provide 3 proofs and 2 corrections. Design charges waived if printing is done with us.</div>
+      </div>
+    
+      <div class="accordion ">
+        <div class="accordion-header">How long does delivery take?</div>
+        <div class="accordion-content">Normally 9–10 days across India (may vary slightly).</div>
+      </div>
+    
+      <div class="accordion ">
+        <div class="accordion-header">What are your payment terms?</div>
+        <div class="accordion-content">30% advance is required, balance before dispatch.</div>
+      </div>
+    
+      <div class="accordion ">
+        <div class="accordion-header">Do you ship outside India?</div>
+        <div class="accordion-content">Currently, we deliver only across India.</div>
+      </div>
+    
+  </div>
+
+  <div class="faq-right">
+   <img src="/images/mfaq.png" alt="FAQs - Ecobazar">
+  </div>
+</section>
+
+<script>
+  const accordions = document.querySelectorAll('.accordion');
+  accordions.forEach(acc => {
+    acc.querySelector('.accordion-header').addEventListener('click', () => {
+      acc.classList.toggle('active');
+    });
+  });
+</script>
+
+  </main>
+
+  
+  <footer>
+    <div class="home-footer-top">
+      <div class="home-footer-col">
+        <h3>Aakar Offset</h3>
+        <p>We provide high-quality printing solutions with trusted service and care.</p>
+        <p>(+91) 9428412132</p>
+        <p>aakaroffset@yahoo.com</p>
+      </div>
+      <div class="home-footer-col">
+        <h3>My Account</h3>
+        <a href="#">My Account</a>
+        <a href="#">Order History</a>
+        <a href="#">Shopping Cart</a>
+        <a href="#">Wishlist</a>
+      </div>
+      <div class="home-footer-col">
+        <h3>Help</h3>
+        <a href="#">Contact</a>
+        <a href="#">FAQs</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="home-footer-col">
+        <h3>Company</h3>
+        <a href="#">About us</a>
+        <a href="#">Shop</a>
+        <a href="#">Products</a>
+        <a href="#">Track Order</a>
+      </div>
+      <div class="home-footer-col">
+        <h3>Categories</h3>
+        <a href="#">Books</a>
+        <a href="#">Magazines</a>
+        <a href="#">Business Cards</a>
+        <a href="#">Flyers</a>
+      </div>
+    </div>
+    <div class="home-footer-bottom">
+      © 2025 Aakar Offset. All Rights Reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
