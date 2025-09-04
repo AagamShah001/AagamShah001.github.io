@@ -141,10 +141,10 @@ nav a:hover { color: var(--black); }
 /* --------------------
    Home – Products
 -------------------- */
-.home-products { display: flex; flex-direction: column; gap: 20px; background: #fafafa;  border-radius: 12px;  text-align: center;  padding: 50px;}
+.home-products { display: flex; flex-direction: column; gap: 20px; background: #fafafa;  border-radius: 12px; align-items: center; text-align: center; width: 100%; padding: 50px;}
 
 /* Responsive grid */
-.home-product-grid {  display: grid;  grid-template-columns: 1fr; /* mobile: single column */  max-width: 1100px;  margin: 0 auto;  padding: 0 16px;}
+.home-product-grid {  display: grid;  grid-template-columns: 1fr; /* mobile: single column */  max-width: 1100px;  padding: 0 16px;}
 
 /* Shared card styling */
 .home-product-big,.home-product {  border: 1px solid #ddd;  padding: 1rem;  background: #fff;  border-radius: 12px;  transition: transform 0.3s, box-shadow 0.3s;  position: relative;  overflow: hidden;  text-align: center;  font-size: 0.95rem;  display: flex;  flex-direction: column;  justify-content: flex-end;  align-items: center;}
@@ -283,7 +283,7 @@ footer {
 @media (max-width: 768px) {
   .home-footer-top {
     width: 100%; /* full width on mobile */
-    padding: 24px 16px; /* tighter mobile spacing */
+    padding: 24px 100px; /* tighter mobile spacing */
   }
 
   .home-footer-col h3::after {
