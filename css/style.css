@@ -201,8 +201,8 @@ nav a:hover { color: var(--black); }
    Footer
 -------------------- */
 footer {
-  background: var(--black);
-  color: var(--white);
+  background: var(--gray-200);
+  color: var(--gray-800);
   font-family: system-ui, sans-serif;
 }
 
@@ -220,7 +220,7 @@ footer {
 .home-footer-col h3 {
   font-size: 1.05rem;
   margin-bottom: 1rem;
-  color: #fff;
+  color: var(--gray-800);
   font-weight: 600;
   cursor: pointer;
   position: relative;
@@ -230,7 +230,7 @@ footer {
 .home-footer-col p,
 .home-footer-col a {
   font-size: 0.92rem;
-  color: #ccc;
+  color: var(--gray-800);
   display: block;
   margin-bottom: 0.5rem;
   transition: color 0.2s ease;
@@ -250,7 +250,6 @@ footer {
 .footer-socials a img {
   width: 22px;
   height: 22px;
-  filter: brightness(0) invert(1);
   transition: opacity 0.2s;
 }
 
@@ -265,12 +264,12 @@ footer {
   padding: 12px clamp(16px, 3vw, 24px); /* no extra 28px bottom padding */
   text-align: center;
   border-top: 1px solid #444;
-  color: #aaa;
+  color: var(--gray-800);
   font-size: 0.9rem;
 }
 
 .footer-legal a {
-  color: #aaa;
+  color: var(--gray-800);
   margin: 0 4px;
   font-size: 0.85rem;
 }
@@ -430,11 +429,14 @@ footer {
 /* --------------------
    Error Page
 -------------------- */
-.error-container { text-align: center; padding: clamp(24px, 6vw, 60px); }
-.error-container h1 { font-size: clamp(2rem, 1.3rem + 2.4vw, 3rem); font-weight: 800; color: var(--gray-800); margin-bottom: 10px; }
-.error-container p { font-size: 1rem; color: #555; margin-bottom: 18px; }
-.error-container a { display: inline-block; padding: 12px 22px; font-size: 16px; background: var(--accent); color: #fff; border-radius: 8px; }
-.error-container a:hover { background: var(--accent-dark); }
+.error-container { min-height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem 1rem; max-width: 600px; margin: 0 auto; color: #fff; } /* SVG illustration */ 
+.error-illustration { margin-bottom: 1.5rem; animation: float 3s ease-in-out infinite; } 
+.error-illustration svg { max-width: 200px; height: auto; stroke: var(--gray-800); /* Pink Lavender */ } /* Floating effect */ 
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } } /* Title */ 
+.error-container h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; font-weight: 700; color: var(--gray-800); } /* Message */ 
+.error-container p { font-size: 1.05rem; line-height: 1.6; margin-bottom: 2rem; color: var(--gray-800); } /* Button */ 
+.error-container a { display: inline-block; padding: 0.75rem 1.5rem; font-size: 1rem; font-weight: 600; color: #fff; background: var(--gray-800); /* African Violet */ border-radius: 8px; text-decoration: none; transition: all 0.3s ease; } 
+.error-container a:hover { background: var(--gray-800); /* Lilac hover */ transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.25); }
 
 /* --------------------
    Utilities
