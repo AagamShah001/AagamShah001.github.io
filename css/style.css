@@ -200,12 +200,109 @@ nav a:hover { color: var(--black); }
 /* --------------------
    Footer
 -------------------- */
-footer { background: var(--black); color: var(--white); }
-.home-footer-top { width: min(100%, 1100px); margin: 0 auto; padding: clamp(24px, 5vw, 48px) clamp(16px, 3vw, 24px); display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-.home-footer-col h3 { font-size: 1rem; margin-bottom: .8rem; }
-.home-footer-col p, .home-footer-col a { font-size: .92rem; color: #ccc; display: block; margin-bottom: .5rem; }
-.home-footer-col a:hover { color: #fff; }
-.home-footer-bottom { width: min(100%, 1100px); margin: 0 auto; padding: 12px clamp(16px, 3vw, 24px) 28px; text-align: center; border-top: 1px solid #444; color: #aaa; font-size: .9rem; }
+footer {
+  background: var(--black);
+  color: var(--white);
+  font-family: system-ui, sans-serif;
+}
+
+/* Top grid */
+.home-footer-top {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: clamp(24px, 5vw, 48px) clamp(16px, 3vw, 24px);
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+/* Titles */
+.home-footer-col h3 {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+
+/* Links & text */
+.home-footer-col p,
+.home-footer-col a {
+  font-size: 0.92rem;
+  color: #ccc;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.home-footer-col a:hover {
+  color: #fff;
+}
+
+/* Social icons */
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 0.5rem;
+}
+
+.footer-socials a img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+  transition: opacity 0.2s;
+}
+
+.footer-socials a:hover img {
+  opacity: 0.7;
+}
+
+/* Bottom strip */
+.home-footer-bottom {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: 12px clamp(16px, 3vw, 24px) 28px;
+  text-align: center;
+  border-top: 1px solid #444;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.footer-legal a {
+  color: #aaa;
+  margin: 0 4px;
+  font-size: 0.85rem;
+}
+
+.footer-legal a:hover {
+  color: #fff;
+}
+
+/* --- Mobile Accordion --- */
+@media (max-width: 768px) {
+  .home-footer-col h3::after {
+    content: "＋";
+    position: absolute;
+    right: 0;
+    font-size: 1rem;
+    transition: transform 0.3s;
+  }
+  .home-footer-col.open h3::after {
+    content: "−";
+  }
+  .home-footer-col a,
+  .home-footer-col p,
+  .footer-socials {
+    display: none;
+  }
+  .home-footer-col.open a,
+  .home-footer-col.open p,
+  .home-footer-col.open .footer-socials {
+    display: block;
+  }
+}
 
 /* --------------------
    About Page
