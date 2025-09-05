@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://aagamshah001.github.io/contact/</loc>
-  </url><url>
     <loc>https://aagamshah001.github.io/</loc>
-  </url><url>
-    <loc>https://aagamshah001.github.io/blog/</loc>
   </url><url>
     <loc>https://aagamshah001.github.io/about/</loc>
   </url><url>
     <loc>https://aagamshah001.github.io/categories/</loc>
   </url><url>
+    <loc>https://aagamshah001.github.io/contact/</loc>
+  </url><url>
     <loc>https://aagamshah001.github.io/faq/</loc>
+  </url><url>
+    <loc>https://aagamshah001.github.io/blog/</loc>
   </url><url>
     <loc>https://aagamshah001.github.io/tags/</loc>
   </url>
